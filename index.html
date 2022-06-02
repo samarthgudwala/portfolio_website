@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Samarth Gudwala</title>
+    <link
+      rel="shortcut icon"
+      href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/microsoft/310/yarn_1f9f6.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Smooth Scroll Java Script -->
+    <script>
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <section id="hero" class="hero-container">
+      <header id="hero-header" class="hero-header">
+        <a href="#hero"
+          ><img
+            class="logo"
+            src="https://res.cloudinary.com/samarth3122/image/upload/v1633759619/Picture8_wwtriu.png"
+        /></a>
+        <nav class="head-nav">
+          <ul>
+            <li class="projects">
+              <a href="#projectsH" class="nav-link">Projects</a>
+            </li>
+            <li class="about">
+              <a href="#aboutH" class="nav-link">About</a>
+            </li>
+            <li class="contact">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <!-- <li>
+              <a href="#bookingSection" class="nav-link btn btn-solid"
+                >Book Now</a
+              >
+            </li> -->
+          </ul>
+        </nav>
+
+        <button class="nav-button">
+          <ion-icon class="nav-icon" name="menu-outline"></ion-icon>
+          <ion-icon class="nav-icon" name="close-outline"></ion-icon>
+        </button>
+      </header>
+      <div class="hero-section">
+        <div>
+          <h1 class="hero-heading">Hi, I am Samarth</h1>
+          <p class="hero-text">
+            <!-- Welcome to my Portfolio Webpage.<br> -->
+            I am an undergraduate student at <span style="font-weight: 600;">IIT Roorkee</span>, who is interested in <br><span style="font-weight: 600;">Consulting, Product Management and Data Analytics</span>.<br>
+            I am a dedicated worker who fancies problem solving, and learning.
+          </p>
+          <div style="display: flex; justify-content: center">
+            <!-- <a
+              href="#bookingSection"
+              class="btn btn-solid"
+              style="margin-right: 1.6rem"
+              >Book Now</a
+            > -->
+            <a href="#projectsH" class="btn btn-hollow">View Projects &darr;</a>
+          </div>
+        </div>
+        <!-- <img
+          class="hero-image"
+          src="https://res.cloudinary.com/samarth3122/image/upload/v1633759617/undraw_Travelers_re_y25a_jizebf.svg"
+        /> -->
+      </div>
+    </section>
+    <span class="anchor" id="projectsH"></span>
+    <section id="projects">
+      <div id="progressbar" class="progressbar">
+        <div id="prog" class="progress"></div>
+      </div>
+      <div id="proj-container" class="fix container">
+        <div class="proj-sidebar">
+          <!-- <a href="#"> -->
+          <div class="section-heading-container">
+            <span class="section-heading">Projects</span>
+          </div>
+        <!-- </a> -->
+          <div class="proj-navbar">
+            <ul>
+              <li><a href="#cbp"><div style="background-color: #e6f9f37f;"><img height="48px" src="https://img.icons8.com/ios/50/undefined/graph--v1.png"/><p>Consulting and Business Growth</p></div></a></li>
+              <li><a href="#aml"><div style="background-color: #e8e9ec81;"><img height="48px" src="https://img.icons8.com/windows/96/undefined/rebalance-portfolio.png"/><p>Data Analytics & Machine Learning</p></div></a></li>
+              <li><a href="#dwd"><div style="background-color: #feebf080;"><img height="48px" src="https://img.icons8.com/ios/100/undefined/programming.png"/><p>Design & Web Development</p></div></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="all-projects">
+          <span class="anchorproj" id="cbp"></span>
+          <div>
+            <div class="proj-type-heading-container">
+              <span class="proj-type-heading" style="box-shadow: inset 6.4px 0 0 0 #00c782;"
+                >Consulting & Business Development</span
+              >
+            </div>
+            <div class="proj-card" style="padding: 40px 32px 32px 32px">
+              <div class="proj-award" style="background-color: #cd7f32">
+                <span>National Finalists</span>
+              </div>
+              <div class="proj-date">
+                <span>DEC '21-APR '22</span>
+              </div>
+              <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/KPMG_logo.svg/1200px-KPMG_logo.svg.png">
+              <img
+                style="width: 36rem"
+                src="kicc.png"
+              />
+            </a>
+              <div>
+                <p class="proj-heading"
+                  >Ideation to Decarbonise the Fast-Fashion Industry</p
+                >
+                <div class="issued-by">
+                  
+                  <img
+                    height="24px"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/KPMG_logo.svg/1200px-KPMG_logo.svg.png"
+                  />
+                
+                  <span class="issued-by-text"
+                    >KPMG Ideation Challenge (KIC'22)</span
+                  >
+                
+                </div>
+                <p class="proj-description">&#8592 For More Information<br>Click for more information</p>
+              </div>
+            </div>
+            <div class="proj-card" style="padding: 40px 32px 32px 32px">
+              <div class="proj-award" style="background-color: #cd7f32">
+                <span>Bronze Medal</span>
+              </div>
+              <div class="proj-date">
+                <span>MAR '22-APR '22</span>
+              </div>
+              <img
+                style="width: 36rem"
+                src="Inter-IIT-BY.png"
+              />
+              <div>
+                <span class="proj-heading"
+                  >Blue Yonder's Sustainable Supply Chain</span
+                >
+                <div class="issued-by">
+                  <img height="24px" src="InterIIT__Logo.png" />
+                  <span class="issued-by-text">10th Inter-IIT Tech Meet</span>
+                </div>
+                <p class="proj-description">KPMG Ideation Challenge</p>
+              </div>
+            </div>
+            <div class="proj-card" style="padding: 40px 32px 32px 32px">
+              <div class="proj-award" style="background-color: #ebbc43">
+                <span>1st Place</span>
+              </div>
+              <div class="proj-date">
+                <span>MAR '21-APR '21</span>
+              </div>
+              <img
+                style="width: 36rem"
+                src="is-21.png"
+              />
+              <div>
+                <span class="proj-heading"
+                  >EV-Rental Start-Up Business Growth</span
+                >
+                <div class="issued-by">
+                  <img height="20px" src="Group 13.png" />
+                  <span class="issued-by-text"
+                    >IntraShARE Business Case Competition '21</span
+                  >
+                </div>
+                <p class="proj-description">KPMG Ideation Challenge</p>
+              </div>
+            </div>
+            <div class="proj-card" style="padding: 40px 32px 32px 32px">
+              <div class="proj-award" style="background-color: #cd7f32">
+                <span>4th Runner-Up</span>
+              </div>
+              <div class="proj-date">
+                <span>DEC '21-JAN '22</span>
+              </div>
+              <img
+                style="width: 36rem"
+                src="tf.png"
+              />
+              <div>
+                <span class="proj-heading"
+                  >Creating a demand shift towards EVs</span
+                >
+                <div class="issued-by">
+                  <img height="36px" src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Logo_of_Techfest%2CIIT_Bombay.jpg" />
+                  <span class="issued-by-text">: TechFest-IIT Bombay '21</span>
+                </div>
+                <p class="proj-description">KPMG Ideation Challenge</p>
+              </div>
+            </div>
+            <div class="proj-card" style="padding: 40px 32px 32px 32px">
+              <div class="proj-award" style="background-color: #C0C0C0">
+                <span>2nd Place</span>
+              </div>
+              <div class="proj-date">
+                <span>MAY '22-MAY '22</span>
+              </div>
+              <img
+                style="width: 36rem"
+                src="is-22.png"
+              />
+              <div>
+                <span class="proj-heading"
+                  >Urban Public Mobility Solutions</span
+                >
+                <div class="issued-by">
+                  <img height="20px" src="Group 13.png" />
+                  <span class="issued-by-text"
+                    >IntraShARE Business Case Competition '22</span
+                  >
+                </div>
+                <p class="proj-description">KPMG Ideation Challenge</p>
+              </div>
+            </div>
+            <div class="proj-card">
+              <div class="proj-date">
+                <span>JULY '21-SEPT '21</span>
+              </div>
+              <img
+                style="width: 36rem"
+                src="cp.png"
+              />
+              <div>
+                <p class="proj-heading"
+                  >How can your government develop digital jobs to reduce unemployment in your country?</p
+                >
+                <div class="issued-by">
+                  <img height="20px" src="Group 13.png" />
+                  <span class="issued-by-text">: Consulting Project</span>
+                </div>
+                <p class="proj-description">KPMG Ideation Challenge</p>
+              </div>
+            </div>
+            <div class="proj-card">
+              <div class="proj-date">
+                <span>MAR '22-MAY '22</span>
+              </div>
+              <img
+                style="width: 36rem"
+                src="sp.png"
+              />
+              <!-- <iframe src="C:\Desktop\MAIN\ShARE\Startup Project\Curelink_ShARE_IITR.pptx" width="36rem"></iframe> -->
+              <div>
+                <span class="proj-heading"
+                  >Project Yeager</span
+                >
+                <div class="issued-by">
+                  <img height="28px" src="StartUp.png" />
+                  <span class="issued-by-text">: Start-Up Project</span>
+                </div>
+                <p class="proj-description">KPMG Ideation Challenge</p>
+              </div>
+            </div>
+            <div class="proj-card" style="padding: 40px 32px 32px 32px">
+              <div class="proj-award" style="background-color: #a8ecd4">
+                <span>Global Project</span>
+              </div>
+              <div class="proj-date">
+                <span>MAY '22-PRESENT</span>
+              </div>
+              <img
+                style="width: 36rem"
+                src="gp.png"
+              />
+              <div>
+                <p class="proj-heading"
+                  >Trends Analysis and Market Sizing of new opportunities for a global mobility company</
+                >
+                <div class="issued-by">
+                  <img height="20px" src="Group 13.png" />
+                  <span class="issued-by-text"></span>
+                </div>
+                <p class="proj-description">Project Details: [Confidential]</p>
+              </div>
+            </div>
+          <span class="anchorproj" id="aml"></span>
+          <div>
+            <div class="proj-type-heading-container">
+              <span class="proj-type-heading" style="box-shadow: inset 6.4px 0 0 0 #151E3F;"
+                >Data Analytics & Machine Learning</span
+              >
+            </div>
+            <div class="proj-card">
+              <img
+                style="width: 36rem"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/2560px-Aspect-ratio-16x9.svg.png"
+              />
+              <!-- <iframe src="C:\Desktop\MAIN\ShARE\Startup Project\Curelink_ShARE_IITR.pptx" width="36rem"></iframe> -->
+              <div>
+                <span class="proj-heading"
+                  >Marketing Campaign Success Prediction Model</span
+                >
+                <div class="issued-by">
+                  <img height="24px" src="InterIIT__Logo.png" />
+                  <span class="issued-by-text">ShARE</span>
+                </div>
+                <p class="proj-description">KPMG Ideation Challenge</p>
+              </div>
+            </div>
+            <div class="proj-card">
+              <img
+                style="width: 36rem"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/2560px-Aspect-ratio-16x9.svg.png"
+              />
+              <!-- <iframe src="C:\Desktop\MAIN\ShARE\Startup Project\Curelink_ShARE_IITR.pptx" width="36rem"></iframe> -->
+              <div>
+                <span class="proj-heading"
+                  >COVID Wave Prediction Model and SOPs</span
+                >
+                <div class="issued-by">
+                  <img height="24px" src="InterIIT__Logo.png" />
+                  <span class="issued-by-text">ShARE</span>
+                </div>
+                <p class="proj-description">KPMG Ideation Challenge</p>
+              </div>
+            </div>
+            <div class="proj-card">
+              <img
+                style="width: 36rem"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/2560px-Aspect-ratio-16x9.svg.png"
+              />
+              <div>
+                <span class="proj-heading"
+                  >Capstone Project: Google Data Analytics</span
+                >
+                <div class="issued-by">
+                  <img height="24px" src="InterIIT__Logo.png" />
+                  <span class="issued-by-text">ShARE</span>
+                </div>
+                <p class="proj-description">KPMG Ideation Challenge</p>
+              </div>
+            </div>
+          </div>
+          <span class="anchorproj" id="dwd"></span>
+          <div>
+            <div class="proj-type-heading-container">
+              <span class="proj-type-heading" style="box-shadow: inset 6.4px 0 0 0 #F0386B;">Design and Web Development</span>
+            </div>
+            <div class="proj-card">
+              <a target="_blank" href="https://samarthgudwala.github.io/abodehomestay/">
+              <img
+                style="width: 36rem"
+                src="AH.png"
+              />
+            </a>
+              <!-- <iframe src="C:\Desktop\MAIN\ShARE\Startup Project\Curelink_ShARE_IITR.pptx" width="36rem"></iframe> -->
+              <div>
+                <span class="proj-heading"
+                  >Freelance Project: Abode Homestay</span
+                >
+                <div class="issued-by">
+                  <img height="24px" src="InterIIT__Logo.png" />
+                  <span class="issued-by-text">ShARE</span>
+                </div>
+                <p class="proj-description">KPMG Ideation Challenge</p>
+              </div>
+            </div>
+            <div class="proj-card">
+              <img
+                style="width: 36rem"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Aspect-ratio-16x9.svg/2560px-Aspect-ratio-16x9.svg.png"
+              />
+              <div>
+                <span class="proj-heading"
+                  >Personal Project: Portfolio Website</span
+                >
+                <div class="issued-by">
+                  <img height="24px" src="InterIIT__Logo.png" />
+                  <span class="issued-by-text">ShARE</span>
+                </div>
+                <p class="proj-description">KPMG Ideation Challenge</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <span class="anchor" id="aboutH"></span>
+    <section id="about"><h1>About Me</h1></section>
+    <section id="contact" class="footer-section">
+      <div class="footer-container">
+        <div class="col-1-footer">
+          <div>
+            <a href="#hero"
+              ><img
+                class="logo"
+                src="https://res.cloudinary.com/samarth3122/image/upload/v1633759619/Picture8_wwtriu.png"
+            /></a>
+            <div class="connections">
+              <a
+                href="https://api.whatsapp.com/send/?phone=%2B918080907001&text&app_absent=0"
+                target="_blank"
+                ><div>
+                  <img
+                    src="https://res.cloudinary.com/samarth3122/image/upload/v1633759618/whatsapp-4451_l1yc6m.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a href="tel:+918080907001"
+                ><div>
+                  <img
+                    src="https://res.cloudinary.com/samarth3122/image/upload/v1633759616/phone-3114_t2ybb4.svg"
+                    alt=""
+                  /></div
+              ></a>
+              <a href="mailto:samarth.gudwala@gmail.com">
+                <div>
+                  <img
+                    src="https://res.cloudinary.com/samarth3122/image/upload/v1633759616/mail-5888_hcfao7.svg"
+                    alt=""
+                  />
+                </div>
+              </a>
+              <a
+                href="https://www.google.com/maps/place/Abode+Homestay/@26.9014277,75.7493363,17z/data=!3m1!4b1!4m8!3m7!1s0x396db48f98c42657:0xb39c47abdc8d0e2d!5m2!4m1!1i2!8m2!3d26.9014229!4d75.7515303"
+                target="_blank"
+                ><div>
+                  <img
+                    src="https://res.cloudinary.com/samarth3122/image/upload/v1633759616/location-2952_gg04fn.svg"
+                    alt=""
+                  /></div
+              ></a>
+            </div>
+          </div>
+          <div style="margin-top: 1.6rem;">
+            <p>+91-80809 07001</p>
+            <p>samarth@gudwala.com</p>
+            <p>Made with ❤ by Samarth Gudwala.</p>
+            <p>All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="brain.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
